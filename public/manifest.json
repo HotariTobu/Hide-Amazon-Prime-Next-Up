@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Hide Amazon Prime Next Up",
+  "version": "1.0.0",
+  "description": "",
+  "permissions": [],
+  "icons": {
+    "16": "assets/icon-16.png",
+    "32": "assets/icon-32.png",
+    "48": "assets/icon-48.png",
+    "128": "assets/icon-128.png"
+  },
+  "action": {
+    "default_title": "",
+    "default_popup": ""
+  },
+  "options_page": "",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.amazon.co.jp/*/video/detail/*"
+      ],
+      "js": [
+        "index.js"
+      ],
+      "css": []
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [],
+      "matches": []
+    }
+  ]
+}
